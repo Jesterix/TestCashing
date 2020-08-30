@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Disk",
+        "repositoryURL": "https://github.com/saoudrizwan/Disk",
+        "state": {
+          "branch": null,
+          "revision": "b0cb4fdf23e51849cc2460bdc6de795c3bcca99d",
+          "version": "0.6.4"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
