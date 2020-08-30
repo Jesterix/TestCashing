@@ -26,11 +26,15 @@ class SecondViewController: UIViewController {
         textField.autocorrectionType = .no
         textField.delegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        StateService().saveState(screenIndex: 1, text: textField.text ?? "")
+    }
 }
 
 extension SecondViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        print("save info")
+        StateService().saveState(screenIndex: 1, text: textField.text ?? "")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

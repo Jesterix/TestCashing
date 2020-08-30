@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Disk
 
 class ViewController: UIViewController {
     
@@ -27,6 +28,10 @@ class ViewController: UIViewController {
             for: .touchUpInside)
         
         view.backgroundColor = .systemTeal
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        StateService().saveState(screenIndex: 0, text: "")
     }
     
     @objc func tapButton() {
