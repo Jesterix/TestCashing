@@ -21,10 +21,16 @@ class ViewController: UIViewController {
         button.snp.makeConstraints { make in
             make.center.equalTo(view)
         }
+        button.addTarget(
+            self,
+            action: #selector(tapButton),
+            for: .touchUpInside)
         
         view.backgroundColor = .systemTeal
     }
-
-
+    
+    @objc func tapButton() {
+        navigationController?.pushViewController(SecondViewController(), animated: true)
+    }
 }
 
