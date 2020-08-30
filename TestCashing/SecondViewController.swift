@@ -3,6 +3,7 @@ import UIKit
 class SecondViewController: UIViewController {
     
     var textField = UITextField()
+    let stateService = StateService()
     
     override func viewDidLoad() {
         view.backgroundColor = .systemIndigo
@@ -20,13 +21,13 @@ class SecondViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        StateService().saveState(screenIndex: 1, text: textField.text ?? "")
+        stateService.saveState(screenIndex: 1, text: textField.text ?? "")
     }
 }
 
 extension SecondViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        StateService().saveState(screenIndex: 1, text: textField.text ?? "")
+        stateService.saveState(screenIndex: 1, text: textField.text ?? "")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

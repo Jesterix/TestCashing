@@ -4,6 +4,8 @@ import Disk
 
 class ViewController: UIViewController {
     
+    let stateService = StateService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,11 +25,14 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        StateService().saveState(screenIndex: 0, text: "")
+        stateService.saveState(screenIndex: 0, text: "")
     }
     
     @objc func tapButton() {
-        navigationController?.pushViewController(SecondViewController(), animated: true)
+        let text = stateService.retrieveState()?.text
+        navigationController?.pushViewController(
+            Configurator().createSecond(with: text ?? ""),
+            animated: true)
     }
 }
 
