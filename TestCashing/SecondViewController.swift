@@ -23,5 +23,17 @@ class SecondViewController: UIViewController {
             make.height.equalTo(40)
         }
         textField.backgroundColor = .white
+        textField.autocorrectionType = .no
+        textField.delegate = self
+    }
+}
+
+extension SecondViewController: UITextFieldDelegate {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        print("save info")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }
