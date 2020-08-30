@@ -69,15 +69,39 @@
 				5EB28F5924FBEAC500C016E5 /* AppDelegate.swift */,
 				5EB28F5B24FBEAC500C016E5 /* SceneDelegate.swift */,
 				5EB28F7924FBFCE500C016E5 /* Configurator.swift */,
-				5EB28F5D24FBEAC500C016E5 /* ViewController.swift */,
-				5EB28F7724FBF45700C016E5 /* StateService.swift */,
-				5EB28F7324FBEE6800C016E5 /* SecondViewController.swift */,
-				5EB28F7524FBF22500C016E5 /* AppState.swift */,
+				5EB28F7B24FC35B700C016E5 /* Controllers */,
+				5EB28F7D24FC35DD00C016E5 /* Services */,
+				5EB28F7C24FC35C700C016E5 /* StateModel */,
 				5EB28F6224FBEACD00C016E5 /* Assets.xcassets */,
 				5EB28F6424FBEACD00C016E5 /* LaunchScreen.storyboard */,
 				5EB28F6724FBEACD00C016E5 /* Info.plist */,
 			);
 			path = TestCashing;
+			sourceTree = "<group>";
+		};
+		5EB28F7B24FC35B700C016E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5EB28F5D24FBEAC500C016E5 /* ViewController.swift */,
+				5EB28F7324FBEE6800C016E5 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5EB28F7C24FC35C700C016E5 /* StateModel */ = {
+			isa = PBXGroup;
+			children = (
+				5EB28F7524FBF22500C016E5 /* AppState.swift */,
+			);
+			path = StateModel;
+			sourceTree = "<group>";
+		};
+		5EB28F7D24FC35DD00C016E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5EB28F7724FBF45700C016E5 /* StateService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
