@@ -15,6 +15,7 @@
 		5EB28F6F24FBEC7F00C016E5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EB28F6E24FBEC7F00C016E5 /* SnapKit */; };
 		5EB28F7224FBEC9B00C016E5 /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 5EB28F7124FBEC9B00C016E5 /* Disk */; };
 		5EB28F7424FBEE6800C016E5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB28F7324FBEE6800C016E5 /* SecondViewController.swift */; };
+		5EB28F7624FBF22500C016E5 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB28F7524FBF22500C016E5 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5EB28F6524FBEACD00C016E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EB28F6724FBEACD00C016E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EB28F7324FBEE6800C016E5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5EB28F7524FBF22500C016E5 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				5EB28F5B24FBEAC500C016E5 /* SceneDelegate.swift */,
 				5EB28F5D24FBEAC500C016E5 /* ViewController.swift */,
 				5EB28F7324FBEE6800C016E5 /* SecondViewController.swift */,
+				5EB28F7524FBF22500C016E5 /* AppState.swift */,
 				5EB28F6224FBEACD00C016E5 /* Assets.xcassets */,
 				5EB28F6424FBEACD00C016E5 /* LaunchScreen.storyboard */,
 				5EB28F6724FBEACD00C016E5 /* Info.plist */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB28F7424FBEE6800C016E5 /* SecondViewController.swift in Sources */,
+				5EB28F7624FBF22500C016E5 /* AppState.swift in Sources */,
 				5EB28F5E24FBEAC500C016E5 /* ViewController.swift in Sources */,
 				5EB28F5A24FBEAC500C016E5 /* AppDelegate.swift in Sources */,
 				5EB28F5C24FBEAC500C016E5 /* SceneDelegate.swift in Sources */,
