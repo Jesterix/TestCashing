@@ -1,16 +1,7 @@
-//
-//  StateService.swift
-//  TestCashing
-//
-//  Created by Georgy Khaydenko on 30.08.2020.
-//  Copyright © 2020 Georgy Khaydenko. All rights reserved.
-//
-
 import Disk
 
 class StateService {
     let stateFileName = "state.json"
-    
     
     func saveState(screenIndex: Int, text: String) {
         let currentState: AppState? = retrieveState()
